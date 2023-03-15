@@ -26,8 +26,8 @@
   --body-border: .6em;
   --body-padding: 3vw;
   --color-mode: 'light';
-  --background: var(--color-purple-Y500);
-  --background-alt:  var(--color-orange);
+  --background: var(--color-orange);
+  --background-alt:  var(--color-purple-Y500);
   --text-color: var(--color-gray-L700);
   --mode-icon: '🌑';
   --mode-icon-opacity: '1';
