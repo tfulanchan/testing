@@ -18,6 +18,8 @@
 
   --color-purple-Y500: #8155BA;
   --color-purple-Y400: #CCA1F3;
+  
+  --color-orange: #FFAE42;
 
   --color-red-R600: #DB4648;
 
@@ -25,7 +27,7 @@
   --body-padding: 3vw;
   --color-mode: 'light';
   --background: var(--color-purple-Y500);
-  --background-alt:  var(--color-purple-Y400);
+  --background-alt:  var(--color-orange);
   --text-color: var(--color-gray-L700);
   --mode-icon: '🌑';
   --mode-icon-opacity: '1';
