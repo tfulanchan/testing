@@ -58,6 +58,7 @@
   --mode-icon-opacity: .85;
 }
 
+
 /* Global
 ---------------------------*/
 
@@ -130,6 +131,31 @@ body.no-js .toggle-button {
 }
 
 .toggle-button:focus-visible {
+  outline: 2px solid var(--text-color);
+}
+
+/* Language button */
+body.no-js .language-button {
+  display: none;
+}
+
+.language-button {
+  margin-top: auto;
+  padding: .4em .8em;
+  background-color: var(--background-alt);
+  border: none;
+  border-radius: 5px;
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.language-button:focus {
+  outline: none;
+  border: none;
+}
+
+.language-button:focus-visible {
   outline: 2px solid var(--text-color);
 }
 
