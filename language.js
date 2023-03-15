@@ -8,19 +8,20 @@
     // Define the language reload anchors
     var language = {
       eng: {
-        welcome: "Welcome to the GeeksforGeeks " +
-        "Portal! You can choose any language " + 
-        "using the buttons above!"
+        welcome: "Welcome! It has been a while since" +
+        "I finished secondary education. My knowledge " + 
+        "and experience are very limited though." +
+        "Let's see how things work out!"
       },
-      es: {
-        welcome: "¡Bienvenido al portal GeeksforGeeks! " +
-        "¡Puedes elegir cualquier idioma usando " +
-        "los botones de arriba!"
+      ar: {
+        welcome: " لقد مرت فترة منذ أن خرجت من المدرسة" +
+        "ولكن معرفتي وخبرتي محدودة للغاية. " +
+        "كيف نستفيد بعضنا البعض؟ وهل هناك ضرورة لذلك؟"
       },
-      hin: {
-        welcome: "GeeksforGeeks पोर्टल पर आपका स्वागत है! " +
-        "आप ऊपर दिए गए बटन का उपयोग करके किसी भी " + 
-        "भाषा को चुन सकते हैं!"
+      zh: {
+        welcome: "我離開學校已經有一段時間了，" +
+        "但我的知識和經驗非常有限。 " + 
+        "請多多指教！"
       }
     };
   
@@ -29,13 +30,13 @@
   
       // Set the content of the webpage 
       // depending on the hash value
-      if (window.location.hash == "#es") {
+      if (window.location.hash == "#ar") {
         siteContent.textContent =
-          language.es.welcome;
+          language.ar.welcome;
       }
-      else if (window.location.hash == "#hin") {
+      else if (window.location.hash == "#zh") {
         siteContent.textContent =
-          language.hin.welcome;
+          language.zh.welcome;
       }
     }
 
