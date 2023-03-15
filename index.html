@@ -34,40 +34,61 @@
           <span class="toggle-icon" aria-hidden="true"></span>
           <span class="[ toggle-text ] [ js-mode-toggle-text ]">Switch to dark theme</span>
         </button>
+        <button class="[ language-button ] [ js-mode-language ]" onclick="changeLanguage('eng')">
+          English
+        </button>
+        <button class="[ language-button ] [ js-mode-language ]" onclick="changeLanguage('es')">
+          Spanish
+        </button>
+        <button class="[ language-button ] [ js-mode-language ]" onclick="changeLanguage('hin')">
+          Hindi
+        </button>
       </div>
     </header>
     <main>
       <section class="about">
-        <h1>Henry</h1>
-        <p>Henry is a proven leader who thrives in small teams and can go the distance.</p>
+
+        <h1>Frodo Baggins</h1>
+        <p>Frodo is a proven leader who thrives in small teams and can go the distance.</p>
+        <div class="language">
+          <!-- Define the content of the page
+          that would be changed -->
+          <p id="siteContent">
+            Welcome to the GeeksforGeeks Portal! 
+            You can choose any language using the
+            buttons above!
+          </p>
+        </div>
       </section>
       <nav class="links">
         <!-- Update <a href=""> to point to your accounts -->
         <!-- Update <span> to your usernames -->
-        <a href="mailto:h951115951115@gmail.coom">
+        <a href="mailto:frodo@bag.end">
           <strong>E-mail</strong>
-          <span>Henry@bag.end</span>
+          <span>frodo@bag.end</span>
         </a>
-        <a href="https://twitter.com/h951115951115">
+        <a href="https://twitter.com/frodobaggins">
           <strong>Twitter</strong>
-          <span>@Henry</span>
+          <span>@frodobaggins</span>
         </a>
-        <a href="https://linkedin.com/tfulanchan">
+        <a href="https://linkedin.com">
           <strong>LinkedIn</strong>
-          <span>@Henry</span>
+          <span>@frodobaggins</span>
         </a>
         <a href="https://github.com">
           <strong>GitHub</strong>
-          <span>@Henry</span>
+          <span>@frodobags</span>
         </a>
         <a href="https://codepen.io">
           <strong>CodePen</strong>
-          <span>@Henry</span>
+          <span>@frodobags</span>
         </a>
       </nav>
     </main>
 
     <!-- Dark mode button functionality -->
     <script src="dark-mode.js"></script>
-  </body>
+        <!-- Dark mode button functionality -->
+    <script src="language.js"></script>
+    </body>
 </html>
