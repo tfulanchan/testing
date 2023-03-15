@@ -15,16 +15,16 @@
   --color-gray-L200: #F2F5F8;
   --color-gray-D200: #A3A8AC;
 
-  --color-purple-Y500: #CBC3E3;
-  --color-purple-Y400: #CBC3E3;
+  --color-yellow-Y500: #FFB916;
+  --color-yellow-Y400: #FFCF50;
 
   --color-red-R600: #DB4648;
 
   --body-border: .6em;
   --body-padding: 3vw;
   --color-mode: 'light';
-  --background: var(--color-purple-Y500);
-  --background-alt:  var(--color-purple-Y400);
+  --background: var(--color-yellow-Y500);
+  --background-alt:  var(--color-yellow-Y400);
   --text-color: var(--color-gray-L700);
   --mode-icon: '🌑';
   --mode-icon-opacity: '1';

@@ -12,16 +12,15 @@
         "Portal! You can choose any language " + 
         "using the buttons above!"
       },
-      ar: {
-        welcome: "يبدو أن لدي العديد من الشهادات ،" +
-        "لكنني بالتأكيد معرفة وخبرة محدودة للغاية." +
-        "ومع ذلك ، فقد زرت أكثر من 20 دولة في حياتي ." +
-        "مرحباً! كيف يمكننا مساعدة بعضنا بعضاً؟"
+      es: {
+        welcome: "¡Bienvenido al portal GeeksforGeeks! " +
+        "¡Puedes elegir cualquier idioma usando " +
+        "los botones de arriba!"
       },
-      zh: {
-        welcome: "看來我有很多證書，但知識和經驗絕對非常有限。" +
-        "我這輩子去過 20 多個國家/地區。 " + 
-        "我們如何才能互惠互利？請多多指教！"
+      hin: {
+        welcome: "GeeksforGeeks पोर्टल पर आपका स्वागत है! " +
+        "आप ऊपर दिए गए बटन का उपयोग करके किसी भी " + 
+        "भाषा को चुन सकते हैं!"
       }
     };
   
@@ -30,13 +29,13 @@
   
       // Set the content of the webpage 
       // depending on the hash value
-      if (window.location.hash == "#ar") {
+      if (window.location.hash == "#es") {
         siteContent.textContent =
-          language.ar.welcome;
+          language.es.welcome;
       }
-      else if (window.location.hash == "#zh") {
+      else if (window.location.hash == "#hin") {
         siteContent.textContent =
-          language.zh.welcome;
+          language.hin.welcome;
       }
     }
 
