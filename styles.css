@@ -16,7 +16,7 @@
   --color-gray-D200: #A3A8AC;
 
   --color-purple-Y500: #CBC3E3;
-  --color-yellow-Y400: #FFCF50;
+  --color-purple-Y400: #CBC3E3;
 
   --color-red-R600: #DB4648;
 
@@ -24,7 +24,7 @@
   --body-padding: 3vw;
   --color-mode: 'light';
   --background: var(--color-purple-Y500);
-  --background-alt:  var(--color-yellow-Y400);
+  --background-alt:  var(--color-purple-Y400);
   --text-color: var(--color-gray-L700);
   --mode-icon: '🌑';
   --mode-icon-opacity: '1';
