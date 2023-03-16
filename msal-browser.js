@@ -11028,13 +11028,15 @@ msalApplication.acquireTokenSilent(tokenRequest)
     var accessToken = tokenResponse.accessToken;
   });
 
-var tokenRequest = {
-  scopes: ["user.read", "mail.read"],
-  account: msalApplication.getAccountByUsername(userEmail)
-};
+function getMessagesFromMSGraph(accessToken, callback) {
+  var endpoint = "https://graph.microsoft.com/v1.0/me/messages?$top=10&$select=subject";
 
-msalApplication.acquireTokenPopup(tokenRequest)
-  .then(function(tokenResponse) {
-    var accessToken = tokenResponse.accessToken;
-  });
-
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200)
+      callback(JSON.parse(this.responseText));
+  }
+  xmlHttp.open("GET", endpoint, true);
+  xmlHttp.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+  xmlHttp.send();
+}
