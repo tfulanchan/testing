@@ -299,3 +299,7 @@ main {
 
 /* Bing Map */
  
+#des {
+  font-size: 15px;
+  text-align: start;
+}
